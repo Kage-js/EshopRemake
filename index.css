@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template: 
+    "header"
+    "catagories"
+    "footer"
+    ;
+}
+
+.header{
+    background-color: red;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+    grid-area:header; 
+    align-items: center;
+}
+
+.mainMenu{
+    padding: 1em;
+}
+
+.catagories{
+    grid-template:catagories;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template:
+    "name"
+    "games"
+    ;
+}
